@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ntate Seya Peanut Butter – Pure Goodness. Real Heritage.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Crimson+Pro:wght@300;400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #C9933A;
+    --gold-light: #E8B95A;
+    --gold-pale: #F5E4C0;
+    --black: #0D0B08;
+    --dark: #1A1610;
+    --warm-dark: #231E16;
+    --cream: #F7EED8;
+    --cream-light: #FBF5E8;
+    --text-light: #C4B08A;
+    --text-muted: #8A7A5A;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background: var(--black);
+    color: var(--cream);
+    overflow-x: hidden;
+  }
+
+  /* ─── NAVIGATION ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(13, 11, 8, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201, 147, 58, 0.15);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--cream); }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.25s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--black) !important;
+    padding: 0.5rem 1.4rem;
+    border-radius: 2px;
+    font-weight: 600 !important;
+    transition: background 0.25s !important;
+  }
+
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--black) !important; }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding-top: 80px;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(201,147,58,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 4rem 6rem 6rem;
+    position: relative;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero-headline {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    color: var(--cream-light);
+  }
+
+  .hero-headline .gold { color: var(--gold); font-style: italic; }
+
+  .hero-subline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    color: var(--text-light);
+    margin-bottom: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    max-width: 480px;
+    margin-bottom: 3rem;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: 'Crimson Pro', serif;
+    font-weight: 600;
+  }
+
+  .badge-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--black);
+    padding: 0.9rem 2.2rem;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.25s, transform 0.15s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  .btn-outline {
+    border: 1px solid rgba(201,147,58,0.5);
+    color: var(--gold);
+    padding: 0.9rem 2.2rem;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.25s, color 0.25s;
+    display: inline-block;
+    background: transparent;
+  }
+
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold-light); }
+
+  .hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 4rem 4rem 2rem;
+  }
+
+  .hero-jar-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .hero-jar-img {
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .jar-glow {
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(circle, rgba(201,147,58,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-origin {
+    position: absolute;
+    bottom: 5rem;
+    right: 3rem;
+    text-align: right;
+    z-index: 3;
+  }
+
+  .hero-origin-label {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: block;
+  }
+
+  .hero-origin-place {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+  }
+
+  /* ─── MARQUEE ─── */
+  .marquee-strip {
+    background: var(--gold);
+    padding: 0.75rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee-inner {
+    display: inline-flex;
+    gap: 0;
+    animation: marquee 22s linear infinite;
+  }
+
+  .marquee-item {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: var(--black);
+    padding: 0 2rem;
+  }
+
+  .marquee-sep {
+    color: rgba(0,0,0,0.35);
+    padding: 0 0.5rem;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ─── SECTION BASE ─── */
+  section { position: relative; }
+
+  .section-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    color: var(--cream-light);
+  }
+
+  .section-title .italic { font-style: italic; color: var(--gold); }
+
+  /* ─── ABOUT / STORY ─── */
+  .story {
+    background: var(--dark);
+    padding: 8rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .story-text { }
+
+  .story-body {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--text-light);
+    margin-top: 2rem;
+  }
+
+  .story-body p + p { margin-top: 1.2rem; }
+
+  .story-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3.5rem;
+  }
+
+  .stat-item {
+    border-top: 1px solid rgba(201,147,58,0.2);
+    padding-top: 1.2rem;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+  }
+
+  .story-visual {
+    position: relative;
+  }
+
+  .story-img-main {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .story-img-badge {
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
+    background: var(--gold);
+    color: var(--black);
+    padding: 1.5rem;
+    border-radius: 2px;
+    text-align: center;
+    min-width: 140px;
+  }
+
+  .story-img-badge strong {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    display: block;
+    line-height: 1;
+  }
+
+  .story-img-badge span {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  /* ─── PRODUCTS ─── */
+  .products {
+    background: var(--black);
+    padding: 8rem 6rem;
+  }
+
+  .products-header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .products-header .section-label { justify-content: center; }
+  .products-header .section-label::before { display: none; }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    background: var(--warm-dark);
+    border: 1px solid rgba(201,147,58,0.15);
+    border-radius: 4px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    transition: border-color 0.3s, transform 0.25s;
+    cursor: pointer;
+  }
+
+  .product-card:hover {
+    border-color: rgba(201,147,58,0.5);
+    transform: translateY(-4px);
+  }
+
+  .product-card.featured {
+    border-color: var(--gold);
+    background: linear-gradient(160deg, rgba(201,147,58,0.06) 0%, var(--warm-dark) 60%);
+  }
+
+  .product-badge-top {
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--black);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    padding: 0.2rem 0.8rem;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .product-variant {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cream-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .product-size {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 2rem;
+  }
+
+  .product-price {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .product-price-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 1.8rem;
+  }
+
+  .product-btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid rgba(201,147,58,0.4);
+    background: transparent;
+    color: var(--gold);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .product-card:hover .product-btn,
+  .product-card.featured .product-btn {
+    background: var(--gold);
+    color: var(--black);
+    border-color: var(--gold);
+  }
+
+  /* ─── FEATURES ─── */
+  .features {
+    background: var(--dark);
+    padding: 8rem 6rem;
+  }
+
+  .features-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  .features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .feature-item {
+    border-left: 2px solid rgba(201,147,58,0.3);
+    padding-left: 1.5rem;
+    transition: border-color 0.25s;
+  }
+
+  .feature-item:hover { border-left-color: var(--gold); }
+
+  .feature-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .feature-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cream-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+  }
+
+  /* ─── NUTRITION ─── */
+  .nutrition {
+    background: var(--warm-dark);
+    padding: 8rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .nutrition-visual {
+    position: relative;
+  }
+
+  .nutrition-visual img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .nutrition-table {
+    background: var(--dark);
+    border: 1px solid rgba(201,147,58,0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 2.5rem;
+  }
+
+  .nutrition-table-header {
+    background: rgba(201,147,58,0.1);
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    border-bottom: 1px solid rgba(201,147,58,0.15);
+  }
+
+  .nutrition-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.95rem;
+  }
+
+  .nutrition-row:last-child { border-bottom: none; }
+
+  .nutrition-row-label { color: var(--text-light); }
+
+  .nutrition-row-val {
+    color: var(--cream);
+    font-weight: 600;
+    font-family: 'Crimson Pro', serif;
+  }
+
+  .nutrition-row.sub .nutrition-row-label {
+    color: var(--text-muted);
+    padding-left: 1rem;
+    font-style: italic;
+  }
+
+  .nutrition-note {
+    margin-top: 1.2rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  /* ─── TESTIMONIAL / TAGLINE ─── */
+  .tagline-section {
+    background: var(--gold);
+    padding: 6rem;
+    text-align: center;
+  }
+
+  .tagline-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-style: italic;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.2;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+  }
+
+  .tagline-sub {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.35em;
+    color: rgba(0,0,0,0.5);
+  }
+
+  /* ─── WHERE TO BUY / CONTACT ─── */
+  .contact {
+    background: var(--black);
+    padding: 8rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .contact-info .section-title { margin-bottom: 2.5rem; }
+
+  .contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-icon {
+    width: 40px; height: 40px;
+    border: 1px solid rgba(201,147,58,0.3);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .contact-detail-text strong {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-detail-text span {
+    font-size: 1.05rem;
+    color: var(--cream);
+    line-height: 1.6;
+  }
+
+  .contact-form-side {}
+
+  .form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--cream-light);
+    margin-bottom: 2rem;
+  }
+
+  .form-row { margin-bottom: 1.2rem; }
+
+  .form-label {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+  }
+
+  .form-input {
+    width: 100%;
+    background: var(--warm-dark);
+    border: 1px solid rgba(201,147,58,0.15);
+    color: var(--cream);
+    padding: 0.85rem 1rem;
+    border-radius: 2px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s;
+  }
+
+  .form-input:focus { border-color: var(--gold); }
+  .form-input::placeholder { color: var(--text-muted); }
+
+  .form-textarea { min-height: 120px; resize: vertical; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--dark);
+    border-top: 1px solid rgba(201,147,58,0.1);
+    padding: 4rem 6rem 2.5rem;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .footer-brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 300px;
+  }
+
+  .footer-col-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-links { list-style: none; }
+
+  .footer-links li { margin-bottom: 0.7rem; }
+
+  .footer-links a {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--cream); }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .footer-bottom a { color: var(--text-muted); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--gold); }
+
+  /* ─── DIVIDER ─── */
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.3;
+  }
+
+  /* ─── SCROLL ANIMATION ─── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 2rem 1.5rem 1rem; }
+    .hero-right { padding: 1rem 1.5rem 3rem; }
+    .story, .features-inner, .nutrition, .contact { grid-template-columns: 1fr; padding: 4rem 1.5rem; gap: 3rem; }
+    .products { padding: 4rem 1.5rem; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+    .tagline-section { padding: 4rem 1.5rem; }
+    footer { padding: 3rem 1.5rem 2rem; }
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    .story-img-badge { position: static; margin-top: 1.5rem; display: inline-block; }
+    .features { padding: 4rem 1.5rem; }
+    .features-list { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Ntate <span>Seya</span></a>
+  <ul class="nav-links">
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#nutrition">Nutrition</a></li>
+    <li><a href="#contact" class="nav-cta">Order Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Made in Bushbuckridge</div>
+    <h1 class="hero-headline">Pure<br>Goodness.<br><span class="gold">Real Heritage.</span></h1>
+    <p class="hero-subline">Crafted from carefully roasted peanuts.</p>
+    <p class="hero-desc">Ntate Seya Peanut Butter brings you the rich, creamy taste of pure roasted peanuts with no shortcuts — just goodness your family will love, made right here in South Africa.</p>
+    <div class="hero-badges">
+      <span class="badge"><span class="badge-dot"></span>No Added Sugar</span>
+      <span class="badge"><span class="badge-dot"></span>No Preservatives</span>
+      <span class="badge"><span class="badge-dot"></span>High in Protein</span>
+    </div>
+    <div class="hero-cta-group">
+      <a href="#products" class="btn-primary">Shop Now</a>
+      <a href="#story" class="btn-outline">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-jar-wrap">
+      <div class="jar-glow"></div>
+      <img src="https://placehold.co/480x580/1A1610/C9933A?text=Ntate+Seya+Jar" alt="Ntate Seya Peanut Butter" class="hero-jar-img" id="hero-jar">
+    </div>
+    <div class="hero-origin">
+      <span class="hero-origin-label">Proudly made in</span>
+      <span class="hero-origin-place">Bushbuckridge</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner" id="marquee">
+    <span class="marquee-item">Pure Roasted Peanuts</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">No Shortcuts</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Just Goodness</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Made in Bushbuckridge</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Real Peanuts. Real Taste.</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">No Added Sugar</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">High in Protein</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Taste the Heritage</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Pure Roasted Peanuts</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">No Shortcuts</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Just Goodness</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Made in Bushbuckridge</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Real Peanuts. Real Taste.</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">No Added Sugar</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">High in Protein</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Taste the Heritage</span><span class="marquee-sep">✦</span>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="story-text fade-up">
+    <div class="section-label">Our Story</div>
+    <h2 class="section-title">From the heart of<br><span class="italic">Limpopo.</span></h2>
+    <div class="story-body">
+      <p>Ntate Seya Peanut Butter was born from a simple conviction: that the finest peanut butter shouldn't come from a factory in some distant city. It should come from right here — from the people who grow the peanuts, who know the soil, who understand what real food tastes like.</p>
+      <p>Crafted under Seya Foods in Matsikitsane, Acornhoek, every jar carries the pride of Bushbuckridge. We use only pure roasted peanuts and salt — because that's all you need when you start with quality.</p>
+      <p>Affordable. Nutritious. Delicious. Great taste that fits every home.</p>
+    </div>
+    <div class="story-stats">
+      <div class="stat-item">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Variants — Smooth & Crunchy</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">25.8g</div>
+        <div class="stat-label">Protein per 100g</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Locally produced</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Added sugar or preservatives</div>
+      </div>
+    </div>
+  </div>
+  <div class="story-visual fade-up" style="transition-delay: 0.15s;">
+    <img src="https://placehold.co/520x600/231E16/C9933A?text=Seya+Foods" alt="Ntate Seya Peanut Butter jars" class="story-img-main">
+    <div class="story-img-badge">
+      <strong>Seya</strong>
+      <span>Foods — Bushbuckridge</span>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="products-header fade-up">
+    <div class="section-label">Variants & Pricing</div>
+    <h2 class="section-title">Choose your <span class="italic">goodness.</span></h2>
+  </div>
+  <div class="products-grid">
+    <div class="product-card fade-up">
+      <div class="product-variant">Smooth</div>
+      <div class="product-name">Smooth Peanut Butter</div>
+      <div class="product-size">400 g</div>
+      <div class="product-price">R39<sup style="font-size:1rem">.99</sup></div>
+      <div class="product-price-label">Retail Price</div>
+      <button class="product-btn">Order Now</button>
+    </div>
+    <div class="product-card featured fade-up" style="transition-delay:0.1s">
+      <div class="product-badge-top">Best Value</div>
+      <div class="product-variant">Smooth</div>
+      <div class="product-name">Smooth Peanut Butter</div>
+      <div class="product-size">800 g</div>
+      <div class="product-price">R69<sup style="font-size:1rem">.99</sup></div>
+      <div class="product-price-label">Retail Price</div>
+      <button class="product-btn">Order Now</button>
+    </div>
+    <div class="product-card fade-up" style="transition-delay:0.2s">
+      <div class="product-variant">Crunchy</div>
+      <div class="product-name">Crunchy Peanut Butter</div>
+      <div class="product-size">400 g</div>
+      <div class="product-price">R41<sup style="font-size:1rem">.99</sup></div>
+      <div class="product-price-label">Retail Price</div>
+      <button class="product-btn">Order Now</button>
+    </div>
+    <div class="product-card fade-up" style="transition-delay:0.3s">
+      <div class="product-variant">Crunchy</div>
+      <div class="product-name">Crunchy Peanut Butter</div>
+      <div class="product-size">800 g</div>
+      <div class="product-price">R72<sup style="font-size:1rem">.99</sup></div>
+      <div class="product-price-label">Retail Price</div>
+      <button class="product-btn">Order Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="features-inner">
+    <div class="fade-up">
+      <div class="section-label">Why Ntate Seya</div>
+      <h2 class="section-title">No compromises. <span class="italic">Ever.</span></h2>
+    </div>
+    <div class="features-list">
+      <div class="feature-item fade-up">
+        <span class="feature-icon">🥜</span>
+        <div class="feature-title">Pure Roasted Peanuts</div>
+        <p class="feature-desc">Only two ingredients: roasted peanuts and salt. Nothing hidden, nothing artificial.</p>
+      </div>
+      <div class="feature-item fade-up" style="transition-delay:0.1s">
+        <span class="feature-icon">🚫</span>
+        <div class="feature-title">No Added Sugar</div>
+        <p class="feature-desc">We let the natural sweetness of quality peanuts speak for itself.</p>
+      </div>
+      <div class="feature-item fade-up" style="transition-delay:0.2s">
+        <span class="feature-icon">💪</span>
+        <div class="feature-title">High in Protein</div>
+        <p class="feature-desc">25.8 g of protein per 100 g — fuel your family with real nutrition.</p>
+      </div>
+      <div class="feature-item fade-up" style="transition-delay:0.3s">
+        <span class="feature-icon">📍</span>
+        <div class="feature-title">Locally Produced</div>
+        <p class="feature-desc">Made in Bushbuckridge, South Africa. Every jar supports our community.</p>
+      </div>
+      <div class="feature-item fade-up" style="transition-delay:0.4s">
+        <span class="feature-icon">🧪</span>
+        <div class="feature-title">No Preservatives</div>
+        <p class="feature-desc">Real food needs no chemical assistance. Store in a cool, dry place.</p>
+      </div>
+      <div class="feature-item fade-up" style="transition-delay:0.5s">
+        <span class="feature-icon">🤝</span>
+        <div class="feature-title">Quality You Can Trust</div>
+        <p class="feature-desc">Crafted with pride under Seya Foods — a name the community stands behind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUTRITION -->
+<section class="nutrition" id="nutrition">
+  <div class="nutrition-visual fade-up">
+    <img src="https://placehold.co/500x480/1A1610/C9933A?text=Nutrition+Facts" alt="Ntate Seya nutrition label">
+  </div>
+  <div class="fade-up" style="transition-delay:0.15s">
+    <div class="section-label">Nutritional Information</div>
+    <h2 class="section-title">Real food.<br><span class="italic">Real numbers.</span></h2>
+    <p style="font-size:1rem; color:var(--text-muted); margin: 1.5rem 0 0; line-height:1.7;">Serving size: 20 g &nbsp;|&nbsp; Servings per jar (800g): 40</p>
+    <div class="nutrition-table">
+      <div class="nutrition-table-header">
+        <span>Typical Values</span>
+        <span>Per 100 g</span>
+      </div>
+      <div class="nutrition-row"><span class="nutrition-row-label">Energy</span><span class="nutrition-row-val">2596 kJ</span></div>
+      <div class="nutrition-row"><span class="nutrition-row-label">Protein</span><span class="nutrition-row-val">25.8 g</span></div>
+      <div class="nutrition-row"><span class="nutrition-row-label">Fat, total</span><span class="nutrition-row-val">49.6 g</span></div>
+      <div class="nutrition-row sub"><span class="nutrition-row-label">— Saturated Fat</span><span class="nutrition-row-val">7.3 g</span></div>
+      <div class="nutrition-row"><span class="nutrition-row-label">Carbohydrate</span><span class="nutrition-row-val">16.7 g</span></div>
+      <div class="nutrition-row sub"><span class="nutrition-row-label">— Sugars</span><span class="nutrition-row-val">4.1 g</span></div>
+      <div class="nutrition-row"><span class="nutrition-row-label">Dietary Fibre</span><span class="nutrition-row-val">6.7 g</span></div>
+      <div class="nutrition-row"><span class="nutrition-row-label">Sodium</span><span class="nutrition-row-val">120 mg</span></div>
+    </div>
+    <p class="nutrition-note">Ingredients: Roasted Peanuts, Salt.<br>Allergen advice: Contains peanuts. Store in a cool, dry place. Stir well before use. Separation is natural.</p>
+  </div>
+</section>
+
+<!-- TAGLINE -->
+<section class="tagline-section">
+  <p class="tagline-quote">"Taste the Heritage. Share the Goodness."</p>
+  <p class="tagline-sub">Ntate Seya Peanut Butter &nbsp;✦&nbsp; Bushbuckridge, South Africa</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-info fade-up">
+    <div class="section-label">Get in Touch</div>
+    <h2 class="section-title">Order or <span class="italic">enquire.</span></h2>
+    <div style="margin-top: 2.5rem;">
+      <div class="contact-detail">
+        <div class="contact-icon">📍</div>
+        <div class="contact-detail-text">
+          <strong>Address</strong>
+          <span>Stand No. 10111, Matsikitsane,<br>Acornhoek, 1360</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <div class="contact-detail-text">
+          <strong>Phone</strong>
+          <span>085 555 0 555<br>082 596 2 444</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <span>info@ntateseyapeanutbutter.co.za</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form-side fade-up" style="transition-delay:0.15s">
+    <h3 class="form-title">Send us a message</h3>
+    <div class="form-row">
+      <label class="form-label">Your Name</label>
+      <input type="text" class="form-input" placeholder="e.g. Thabo Nkosi">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Email Address</label>
+      <input type="email" class="form-input" placeholder="you@example.com">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Message</label>
+      <textarea class="form-input form-textarea" placeholder="Tell us what you need — bulk orders, stockist enquiries, or just to say hello!"></textarea>
+    </div>
+    <button class="btn-primary" style="width:100%; text-align:center;">Send Message</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">Ntate Seya</div>
+      <p class="footer-tagline">Pure Goodness. Real Heritage. Crafted in Bushbuckridge, South Africa under Seya Foods — peanut butter your family can trust.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:0855550555">085 555 0 555</a></li>
+        <li><a href="tel:0825962444">082 596 2 444</a></li>
+        <li><a href="mailto:info@ntateseyapeanutbutter.co.za">info@ntateseyapeanutbutter.co.za</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Seya Foods. All rights reserved.</span>
+    <span>Stand No. 10111, Matsikitsane, Acornhoek, 1360</span>
+  </div>
+</footer>
+
+<script>
+  // Scroll fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Smooth product buttons
+  document.querySelectorAll('.product-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
